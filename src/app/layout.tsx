@@ -28,6 +28,9 @@ export const metadata: Metadata = {
 		'Front-end',
 		'Desenvolvedor Salvador',
 		'Salvador',
+		'my-links-camposweb',
+		'my links',
+		'my links camposweb',
 	],
 	openGraph: {
 		type: 'website',
