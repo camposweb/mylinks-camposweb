@@ -39,7 +39,7 @@ export const metadata: Metadata = {
 		siteName: 'Leandro Campos | Desenvolvedor',
 		images: [
 			{
-				url: 'public/favicon.png',
+				url: 'public/opengraph-image.jpg',
 				width: 512,
 				height: 512,
 				alt: 'Leandro Campos | Desenvolvedor',
