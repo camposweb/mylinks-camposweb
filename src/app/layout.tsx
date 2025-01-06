@@ -15,10 +15,18 @@ export const metadata: Metadata = {
 	robots: {
 		index: true,
 	},
-	keywords: ['react', 'desenvolvedor', 'nextjs', 'next.js', 'dev'],
+	keywords: [
+		'react',
+		'desenvolvedor',
+		'nextjs',
+		'next.js',
+		'dev',
+		'camposweb',
+		'camposweb@gmail.com',
+	],
 	openGraph: {
 		type: 'website',
-		url: '',
+		url: 'https://mylinks-camposweb.vercel.app/',
 		locale: 'pt-BR',
 		title: 'Leandro Campos | Desenvolvedor',
 		description:
@@ -26,7 +34,7 @@ export const metadata: Metadata = {
 		siteName: 'Leandro Campos | Desenvolvedor',
 		images: [
 			{
-				url: '',
+				url: 'public/perfil-compact.jpg',
 				alt: 'Leandro Campos | Desenvolvedor',
 			},
 		],
