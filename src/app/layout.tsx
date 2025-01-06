@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { Analytics } from '@vercel/analytics/react'
 import { Roboto } from 'next/font/google'
 import './globals.css'
 
@@ -23,6 +24,10 @@ export const metadata: Metadata = {
 		'dev',
 		'camposweb',
 		'camposweb@gmail.com',
+		'front-end',
+		'Front-end',
+		'Desenvolvedor Salvador',
+		'Salvador',
 	],
 	openGraph: {
 		type: 'website',
@@ -34,7 +39,9 @@ export const metadata: Metadata = {
 		siteName: 'Leandro Campos | Desenvolvedor',
 		images: [
 			{
-				url: 'public/perfil-compact.jpg',
+				url: 'public/favicon.png',
+				width: 512,
+				height: 512,
 				alt: 'Leandro Campos | Desenvolvedor',
 			},
 		],
@@ -52,6 +59,7 @@ export default function RootLayout({
 				className={`${roboto.variable} antialiased bg-zinc-800 font-roboto`}
 			>
 				{children}
+				<Analytics />
 			</body>
 		</html>
 	)
