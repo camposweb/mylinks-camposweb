@@ -1,101 +1,71 @@
-import Image from "next/image";
+import Image from 'next/image'
+import Link from 'next/link'
+
+import profile from './assets/perfil-compact.jpg'
+
+import {
+	GithubLogo,
+	LinkedinLogo,
+	WhatsappLogo,
+	EnvelopeSimple,
+} from '@phosphor-icons/react/dist/ssr'
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+	return (
+		<main className="flex flex-col justify-center items-center pt-10 py-8 px-8 lg:px-64">
+			<Image
+				src={profile}
+				alt="profile"
+				className="object-cover rounded-full w-40 h-40"
+				quality={100}
+				width={150}
+				height={150}
+			/>
+			<h1 className="font-bold text-4xl mt-10 text-white">Leandro Campos</h1>
+			<span className="font-medium text-lg text-gray-100">Desenvolvedor</span>
+			<section className="flex flex-col justify-center items-center gap-1 mt-4">
+				<Link
+					href={'mailto:camposweb@gmail.com'}
+					className="flex items-center gap-2 hover:underline font-roboto text-gray-100"
+				>
+					<EnvelopeSimple size={22} /> camposweb@gmail.com
+				</Link>
+				<Link
+					href={'https://wa.me/5571991470062'}
+					target="_blank"
+					className="flex items-center gap-2 hover:underline font-roboto text-gray-100"
+				>
+					<WhatsappLogo size={22} /> (71) 99147-0062
+				</Link>
+				<Link
+					href={'https://www.linkedin.com/in/camposdev/'}
+					target="_blank"
+					className="flex items-center gap-2 hover:underline font-roboto text-gray-100"
+				>
+					<LinkedinLogo size={22} /> linkedin.com/in/camposdev
+				</Link>
+				<Link
+					href={'https://github.com/camposweb'}
+					target="_blank"
+					className="flex items-center gap-2 hover:underline font-roboto text-gray-100"
+				>
+					<GithubLogo size={22} /> github.com/camposweb
+				</Link>
+			</section>
+			<p className="mt-5 text-center md:text-left text-base font-roboto text-gray-300 leading-relaxed">
+				Desenvolvedor Front-End com ampla experiência na criação de interfaces
+				modernas e otimizadas utilizando ReactJS, Next.js e ferramentas de
+				estilização como TailwindCSS e styled-components. Hábil na criação de
+				aplicações responsivas e otimizadas, garantindo fidelidade ao design no
+				Figma e foco na experiência do usuário. Conhecimento em testes unitários
+				e end-to-end com Cypress e React Testing Library e gerenciamento de
+				estado com ContextAPI, Redux, React Query. Possuo também habilidades
+				complementares em back-end com Java e Spring Boot Web, integrando
+				front-end a APIs robustas e escaláveis. Experiência em metodologias
+				ágeis (Scrum, Kanban) e no uso de ferramentas como GIT e Docker, com
+				certificações em ReactJS, Java e AWS que reforçam meu compromisso com a
+				qualidade e aprendizado contínuo.
+			</p>
+		</main>
+	)
 }
