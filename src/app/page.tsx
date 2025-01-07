@@ -12,7 +12,7 @@ import {
 
 export default function Home() {
 	return (
-		<main className="flex flex-col justify-center items-center pt-10 py-8 px-8 lg:px-64">
+		<main className="flex flex-col justify-center items-center pt-10 py-8 px-8 lg:px-80">
 			<Image
 				src={profile}
 				alt="profile"
@@ -52,20 +52,22 @@ export default function Home() {
 					<GithubLogo size={22} /> github.com/camposweb
 				</Link>
 			</section>
-			<p className="mt-5 text-center md:text-left text-base font-roboto text-gray-300 leading-relaxed">
-				Desenvolvedor Front-End com ampla experiência na criação de interfaces
-				modernas e otimizadas utilizando ReactJS, Next.js e ferramentas de
-				estilização como TailwindCSS e styled-components. Hábil na criação de
-				aplicações responsivas e otimizadas, garantindo fidelidade ao design no
-				Figma e foco na experiência do usuário. Conhecimento em testes unitários
-				e end-to-end com Cypress e React Testing Library e gerenciamento de
-				estado com ContextAPI, Redux, React Query. Possuo também habilidades
-				complementares em back-end com Java e Spring Boot Web, integrando
-				front-end a APIs robustas e escaláveis. Experiência em metodologias
-				ágeis (Scrum, Kanban) e no uso de ferramentas como GIT e Docker, com
-				certificações em ReactJS, Java e AWS que reforçam meu compromisso com a
-				qualidade e aprendizado contínuo.
-			</p>
+			<article className="px-8 py-4 bg-gray-900 rounded-md mt-8">
+				<p className="text-center md:text-left text-base font-roboto text-gray-300 leading-relaxed">
+					Desenvolvedor Front-End com ampla experiência na criação de interfaces
+					modernas e otimizadas utilizando ReactJS, Next.js e ferramentas de
+					estilização como TailwindCSS e styled-components. Hábil na criação de
+					aplicações responsivas e otimizadas, garantindo fidelidade ao design
+					no Figma e foco na experiência do usuário. Conhecimento em testes
+					unitários e end-to-end com Cypress e React Testing Library e
+					gerenciamento de estado com ContextAPI, Redux, React Query. Possuo
+					também habilidades complementares em back-end com Java e Spring Boot
+					Web, integrando front-end a APIs robustas e escaláveis. Experiência em
+					metodologias ágeis (Scrum, Kanban) e no uso de ferramentas como GIT e
+					Docker, com certificações em ReactJS, Java e AWS que reforçam meu
+					compromisso com a qualidade e aprendizado contínuo.
+				</p>
+			</article>
 		</main>
 	)
 }
