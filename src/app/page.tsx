@@ -35,7 +35,8 @@ export default function Home() {
 					target="_blank"
 					className="flex items-center gap-2 hover:underline font-roboto text-gray-100"
 				>
-					<WhatsappLogo size={22} /> (71) 99147-0062
+					<WhatsappLogo size={22} />
+					+55 (71) 99147-0062
 				</Link>
 				<Link
 					href={'https://www.linkedin.com/in/camposdev/'}
