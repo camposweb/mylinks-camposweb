@@ -27,14 +27,14 @@ export default function Home() {
 			<section className='grid grid-cols-1 gap-4 mt-10 w-full justify-center'>
 			<Link
 					href={'mailto:camposweb@gmail.com'}
-					className="flex items-center gap-2 hover:underline font-roboto text-gray-100 rounded-lg py-4 bg-gray-900 border border-solid border-transparent hover:border-gray-100 justify-center transition"
+					className="flex items-center gap-2 font-roboto text-gray-100 rounded-lg py-4 bg-gray-900 border border-solid border-transparent hover:border-gray-100 justify-center transition"
 				>
 					<EnvelopeSimple size={24} /> camposweb@gmail.com
 				</Link>
 				<Link
 					href={'https://wa.me/5571991470062'}
 					target="_blank"
-					className="flex items-center gap-2 hover:underline font-roboto text-gray-100 rounded-lg py-4 bg-gray-900 border border-solid border-transparent hover:border-gray-100 justify-center transition"
+					className="flex items-center gap-2 font-roboto text-gray-100 rounded-lg py-4 bg-gray-900 border border-solid border-transparent hover:border-gray-100 justify-center transition"
 				>
 					<WhatsappLogo size={22} />
 					+55 (71) 99147-0062
@@ -42,21 +42,21 @@ export default function Home() {
 				<Link
 					href={'https://www.linkedin.com/in/camposdev/'}
 					target="_blank"
-					className="flex items-center gap-2 hover:underline font-roboto text-gray-100 rounded-lg py-4 bg-gray-900 border border-solid border-transparent hover:border-gray-100 justify-center transition"
+					className="flex items-center gap-2 font-roboto text-gray-100 rounded-lg py-4 bg-gray-900 border border-solid border-transparent hover:border-gray-100 justify-center transition"
 				>
 					<LinkedinLogo size={22} /> linkedin.com/in/camposdev
 				</Link>
 				<Link
 					href={'https://github.com/camposweb'}
 					target="_blank"
-					className="flex items-center gap-2 hover:underline font-roboto text-gray-100 rounded-lg py-4 bg-gray-900 border border-solid border-transparent hover:border-gray-100 justify-center transition"
+					className="flex items-center gap-2 font-roboto text-gray-100 rounded-lg py-4 bg-gray-900 border border-solid border-transparent hover:border-gray-100 justify-center transition"
 				>
 					<GithubLogo size={22} /> github.com/camposweb
 				</Link>
 				<Link
 					href={'https://drive.google.com/file/d/1Ckg9rl81ivU1cFbOgZ3BzXsySeAq3hxm/view?usp=drive_link'}
 					target="_blank"
-					className="flex items-center gap-2 hover:underline font-roboto text-gray-100 rounded-lg py-4 bg-gray-900 border border-solid border-transparent hover:border-gray-100 justify-center transition"
+					className="flex items-center gap-2 font-roboto text-gray-100 rounded-lg py-4 bg-gray-900 border border-solid border-transparent hover:border-gray-100 justify-center transition"
 				>
 					<FileArrowDown size={22} /> Meu currículo
 				</Link>
