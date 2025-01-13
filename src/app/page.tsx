@@ -24,7 +24,7 @@ export default function Home() {
 			/>
 			<h1 className="font-bold text-4xl mt-10 text-white">Leandro Campos</h1>
 			<span className="font-medium text-lg text-gray-100">Desenvolvedor</span>
-			<section className='grid grid-cols-1 gap-4 mt-10 w-full justify-center lg:max-w-[30rem]'>
+			<section className='grid grid-cols-1 gap-4 mt-10 w-full justify-center lg:max-w-[30rem] md:max-w-[30rem]'>
 			<Link
 					href={'mailto:camposweb@gmail.com'}
 					className="flex items-center gap-2 font-roboto text-gray-100 rounded-lg py-4 bg-gray-900 border border-solid border-transparent hover:border-gray-100 justify-center transition"
