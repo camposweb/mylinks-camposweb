@@ -17,7 +17,7 @@ export default function Home() {
 			<Image
 				src={profile}
 				alt="profile"
-				className="object-cover rounded-full w-48 h-48 object-center"
+				className="object-cover rounded-full w-[150px] h-[150px] bg-cover"
 				quality={100}
 				width={150}
 				height={150}
