@@ -17,10 +17,10 @@ export default function Home() {
 			<Image
 				src={profile}
 				alt="profile"
-				className="object-cover rounded-full w-[150px] h-[150px] bg-cover"
+				className="object-cover rounded-full w-[200px] h-[200px] bg-cover"
 				quality={100}
-				width={150}
-				height={150}
+				width={200}
+				height={200}
 			/>
 			<h1 className="font-bold text-4xl mt-10 text-white">Leandro Campos</h1>
 			<span className="font-medium text-lg text-gray-100">Desenvolvedor</span>
