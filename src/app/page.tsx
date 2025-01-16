@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-import profile from './assets/profile.jpg'
+import profile from './assets/original.jpg'
 
 import {
 	GithubLogo,
@@ -17,7 +17,7 @@ export default function Home() {
 			<Image
 				src={profile}
 				alt="profile"
-				className="object-cover rounded-full w-40 h-40 object-center"
+				className="object-cover rounded-full w-48 h-48 object-center"
 				quality={100}
 				width={150}
 				height={150}
